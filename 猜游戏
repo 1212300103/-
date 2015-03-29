@@ -1,0 +1,39 @@
+public class MainActivity extends Activity {
+
+	private TextView info;
+	private EditText input;
+	private Button button;
+	private int target;
+	@Override
+	public void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
+		info=(TextView)findViewById(R.id.info);
+		input=(EditText)findViewById(R.id.input);
+		button=(Button)findViewById(R.id.button);
+		button.setOnClickListener()
+		{
+			public void onClick(View view)
+			{
+				if(botton.getText().equals("OK"))
+					return;
+				int tmp=Integer.parseInt(input.getText().toString());
+				if (tmp=target)
+				{
+					info.setText("恭喜您，猜对了");
+					button。setText("再来一次");
+				}
+				else if(tmp<target)
+					info.setText("猜小了，请重试");
+				else
+					info。setText("猜大了，请重试");		
+			}
+			else
+			{newGame()}
+		}
+	});
+	newGame();
+
+}
+}
