@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    andriod:gravity="center" 
+    andriod:orientation="vertical">
+    <TextView andriod:id="@+id/info"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"  
+     andriod:textSize="10pt"/>
+    <EditText andriod:id="@+id/input"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"  
+     andriod:textSize="10pt"
+     andriod:layout_margin="2pt"
+     andriod:inputType="number"/> 
+    <Button andriod:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        andriod:textSize="10pt"
+        andriod:layout_margin="2pt" />
+</RelativeLayout>
