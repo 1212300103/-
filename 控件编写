@@ -1,0 +1,16 @@
+Activity01.java
+Package mars.activity;
+Import andriod.app.Activity;
+Public class Activity01 extends Activity
+{
+Override
+Public void onCreate(Bundle savaInstanceState)
+{
+ Super.onCreate(saveInstanceState);
+ setContenView(R.layout.main);
+ Textview myTextView=(Textview)findViewById(R.id.myTextView);
+ Button myButton = (Button)findViewById(R.id.myButton);
+ myTextView.setText(“我的第一个TextView”);
+ myButton.setText(“我的第一个Button”+”\n”+”test”);
+}
+}
