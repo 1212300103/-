@@ -14,3 +14,25 @@ Public void onCreate(Bundle savaInstanceState)
  myButton.setText(“我的第一个Button”+”\n”+”test”);
 }
 }
+
+
+
+
+Main.xml
+<?xml version=”1.0” encoding=”utf-8”/>
+<LinearLayout xmlns:android=”schemas.android.com/apk/res/android”
+ Android:orientation=”vertical”
+ Android:layout_width=”fill_parent”
+ Android:layout_height=”fill_parent”
+>
+<TextView
+Android:id=”@+id/myTextview”
+Android:layout_width=”fill_parent”
+Android:layout_height=”wrap_content”
+/>
+<BUtton
+Android:id=”@+id/myButton”
+Android:layout_width=”fill_parent”
+Android:layout_height=”wrap_content”
+/>
+</LinearLayout>
